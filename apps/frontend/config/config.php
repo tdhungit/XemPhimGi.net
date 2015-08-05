@@ -1,6 +1,6 @@
 <?php
 
-$theme = 'caro';
+$theme = 'xpg';
 
 return new \Phalcon\Config(array(
 	'database' => include __DIR__ . '/../../config/database.php',
