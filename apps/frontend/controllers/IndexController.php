@@ -11,4 +11,9 @@ class IndexController extends ControllerBase
             1,2,3,4,5,6
         );
     }
+
+    public function detailAction($id = null)
+    {
+
+    }
 }

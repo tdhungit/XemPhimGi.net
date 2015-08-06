@@ -6,17 +6,17 @@
     <meta name="description"
           content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="{{ theme_url }}js/jPlayer/jplayer.flat.css" type="text/css"/>
-    <link rel="stylesheet" href="{{ theme_url }}css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="{{ theme_url }}css/animate.css" type="text/css"/>
-    <link rel="stylesheet" href="{{ theme_url }}css/font-awesome.min.css" type="text/css"/>
-    <link rel="stylesheet" href="{{ theme_url }}css/simple-line-icons.css" type="text/css"/>
-    <link rel="stylesheet" href="{{ theme_url }}css/font.css" type="text/css"/>
-    <link rel="stylesheet" href="{{ theme_url }}css/app.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url(theme_uri) }}js/jPlayer/jplayer.flat.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url(theme_uri) }}css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url(theme_uri) }}css/animate.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url(theme_uri) }}css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url(theme_uri) }}css/simple-line-icons.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url(theme_uri) }}css/font.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ static_url(theme_uri) }}css/app.css" type="text/css"/>
     <!--[if lt IE 9]>
-    <script src="{{ theme_url }}js/ie/html5shiv.js"></script>
-    <script src="{{ theme_url }}js/ie/respond.min.js"></script>
-    <script src="{{ theme_url }}js/ie/excanvas.js"></script>
+    <script src="{{ static_url(theme_uri) }}js/ie/html5shiv.js"></script>
+    <script src="{{ static_url(theme_uri) }}js/ie/respond.min.js"></script>
+    <script src="{{ static_url(theme_uri) }}js/ie/excanvas.js"></script>
     <![endif]-->
 </head>
 <body class="">
@@ -28,7 +28,7 @@
             </a>
             <a href="{{ url() }}" class="navbar-brand text-lt">
                 <i class="icon-earphones"></i>
-                <img src="{{ theme_url }}images/logo.png" alt="." class="hide">
+                <img src="{{ static_url(theme_uri) }}images/logo.png" alt="." class="hide">
                 <span class="hidden-nav-xs m-l-sm">Musik</span>
             </a>
             <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
@@ -68,7 +68,7 @@
                             <div class="list-group list-group-alt">
                                 <a href="#" class="media list-group-item">
                                     <span class="pull-left thumb-sm">
-                                        <img src="{{ theme_url }}images/a0.png" alt="..." class="img-circle">
+                                        <img src="{{ static_url(theme_uri) }}images/a0.png" alt="..." class="img-circle">
                                     </span>
                                     <span class="media-body block m-b-none">
                                         Use awesome animate.css<br>
@@ -94,7 +94,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle bg clear" data-toggle="dropdown">
                         <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
-                             <img src="{{ theme_url }}images/a0.png" alt="...">
+                             <img src="{{ static_url(theme_uri) }}images/a0.png" alt="...">
                         </span>
                         John.Smith <b class="caret"></b>
                     </a>
@@ -445,7 +445,7 @@
                             <div class="dropdown dropup wrapper-sm clearfix">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                       <span class="thumb-sm avatar pull-left m-l-xs">
-                        <img src="{{ theme_url }}images/a3.png" class="dker" alt="...">
+                        <img src="{{ static_url(theme_uri) }}images/a3.png" class="dker" alt="...">
                         <i class="on b-black"></i>
                       </span>
                       <span class="hidden-nav-xs clear">
@@ -491,15 +491,15 @@
         </section>
     </section>
 </section>
-<script src="{{ theme_url }}js/jquery.min.js"></script>
+<script src="{{ static_url(theme_uri) }}js/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="{{ theme_url }}js/bootstrap.js"></script>
+<script src="{{ static_url(theme_uri) }}js/bootstrap.js"></script>
 <!-- App -->
-<script src="{{ theme_url }}js/app.js"></script>
-<script src="{{ theme_url }}js/slimscroll/jquery.slimscroll.min.js"></script>
-<script src="{{ theme_url }}js/app.plugin.js"></script>
-<script type="text/javascript" src="{{ theme_url }}js/jPlayer/jquery.jplayer.min.js"></script>
-<script type="text/javascript" src="{{ theme_url }}js/jPlayer/add-on/jplayer.playlist.min.js"></script>
-<script type="text/javascript" src="{{ theme_url }}js/jPlayer/demo.js"></script>
+<script src="{{ static_url(theme_uri) }}js/app.js"></script>
+<script src="{{ static_url(theme_uri) }}js/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="{{ static_url(theme_uri) }}js/app.plugin.js"></script>
+<script type="text/javascript" src="{{ static_url(theme_uri) }}js/jPlayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="{{ static_url(theme_uri) }}js/jPlayer/add-on/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="{{ static_url(theme_uri) }}js/jPlayer/demo.js"></script>
 </body>
 </html>

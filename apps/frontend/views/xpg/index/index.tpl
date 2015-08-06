@@ -14,7 +14,7 @@
                             <div class="top">
                                 <span class="badge bg-dark m-l-sm m-t-sm">03:20</span>
                             </div>
-                            <a href="video-detail.html"><img src="{{ theme_url }}images/m40.jpg" alt="" class="r r-2x img-full"></a>
+                            <a href="video-detail.html"><img src="{{ static_url(theme_uri) }}images/m40.jpg" alt="" class="r r-2x img-full"></a>
                         </div>
                         <div class="padder-v">
                             <a href="video-detail.html" class="text-ellipsis">Tempered Song</a>

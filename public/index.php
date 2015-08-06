@@ -43,16 +43,23 @@ try {
         ));
 
         /* front end */
+        /* home page */
         $router->add('/index', array(
             'module' => 'frontend',
             'controller' => 'index',
             'action' => 'index'
         ));
-
         $router->add('/', array(
             'module' => 'frontend',
             'controller' => 'index',
             'action' => 'index'
+        ));
+        /* video detail */
+        $router->add('/detail/:params', array(
+            'module' => 'frontend',
+            'controller' => 'index',
+            'action' => 'detail',
+            'params' => 1
         ));
 
         return $router;
