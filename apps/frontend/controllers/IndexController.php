@@ -25,9 +25,15 @@ class IndexController extends ControllerBase
     public function indexAction()
     {
         $cat_id = $this->request->getQuery('cat_id');
+        $q = $this->request->getQuery('q');
+        if ($q) {
+            $where = "name like :name:";
+        }
 
         if (!$cat_id) {
             $videos = Movies::find(array(
+                $where,
+                'bind' => array('name' => '%' . $q . '%'),
                 "order" => "id DESC"
             ));
         } else {
