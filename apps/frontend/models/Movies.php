@@ -9,11 +9,10 @@
  * File: Movies.php
  */
 
-namespace Modules\Frontend\Controllers;
+namespace Modules\Frontend\Models;
 
-use Phalcon\Mvc\Controller;
 
-class ControllerBase extends Controller
+class Movies extends ModelBase
 {
 
 }

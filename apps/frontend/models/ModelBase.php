@@ -4,16 +4,17 @@
  * User: Jacky
  * E-Mail: jacky@carocrm.com or jacky@youaddon.com
  * Date: 8/6/2015
- * Time: 5:52 PM
+ * Time: 5:54 PM
  * Project: XemPhimGi
- * File: Movies.php
+ * File: ModelBase.php
  */
 
-namespace Modules\Frontend\Controllers;
+namespace Modules\Frontend\Models;
 
-use Phalcon\Mvc\Controller;
 
-class ControllerBase extends Controller
+use Phalcon\Mvc\Model;
+
+class ModelBase extends Model
 {
 
 }

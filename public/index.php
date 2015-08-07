@@ -44,15 +44,17 @@ try {
 
         /* front end */
         /* home page */
-        $router->add('/index', array(
+        $router->add('/index/:params', array(
             'module' => 'frontend',
             'controller' => 'index',
-            'action' => 'index'
+            'action' => 'index',
+            'params' => 1
         ));
-        $router->add('/', array(
+        $router->add('/:params', array(
             'module' => 'frontend',
             'controller' => 'index',
-            'action' => 'index'
+            'action' => 'index',
+            'params' => 1
         ));
         /* video detail */
         $router->add('/detail/:params', array(
@@ -60,6 +62,12 @@ try {
             'controller' => 'index',
             'action' => 'detail',
             'params' => 1
+        ));
+
+        $router->add('/ajax_cats', array(
+            'module' => 'frontend',
+            'controller' => 'index',
+            'action' => 'list_categories',
         ));
 
         return $router;
