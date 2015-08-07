@@ -48,7 +48,7 @@ class IndexController extends ControllerBase
         }
 
         $currentPage = $this->request->getQuery('page');
-        $paginator_limit = 18; // @TODO
+        $paginator_limit = 36; // @TODO
         $paginator = new PaginatorModel(array(
             "data" => $videos,
             "limit" => $paginator_limit,
